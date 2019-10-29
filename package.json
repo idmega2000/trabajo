@@ -1,0 +1,30 @@
+{
+  "name": "trabajo",
+  "version": "1.0.0",
+  "description": "A job application platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idmega2000/trabajo.git"
+  },
+  "keywords": [
+    "web",
+    "api",
+    "platform",
+    "job",
+    "application"
+  ],
+  "author": "idmega, andrewinsoul, samuelgeorge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idmega2000/trabajo/issues"
+  },
+  "homepage": "https://github.com/idmega2000/trabajo#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "6.2.2"
+  }
+}
