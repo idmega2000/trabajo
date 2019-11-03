@@ -30,9 +30,13 @@
     "@babel/node": "^7.6.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "@babel/register": "^7.6.2",
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.5",
     "babel-preset-env": "^1.7.0",
     "morgan": "^1.9.1",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
   },
   "engines": {
     "node": "12.13.0"

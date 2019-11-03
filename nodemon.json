@@ -1,5 +1,6 @@
-{
-    "watch": ["server"],
-    "exec": "babel-node index.js",
+  
+  {
+    "watch": ["/server", "static"],
+    "exec": "tsc -p index.ts",
     "ext": "js ts"
   }
