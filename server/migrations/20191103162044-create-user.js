@@ -46,8 +46,13 @@ export default {
 
       },
       gender: {
-        type: Sequelize.STRING,
-
+        type: Sequelize.ENUM,
+        values: [
+          'male',
+          'female',
+          'unspecified'
+        ],
+        defaultValue: 'male'
       },
       phone: {
         type: Sequelize.STRING,
