@@ -4,7 +4,7 @@ import morgan from 'morgan';
 require('dotenv').config()
 const app = express();
 
-const dev = process.env.NODE_ENV
+const dev = process.env.NODE_ENV || 'development'
 
 let corsOptions = {
     origin: process.env.FRONT_END_URL,
@@ -37,9 +37,7 @@ app.use((req, res, next) => {
 
 app.listen(PORT, () => {
     console.log(
-        `> Server listening at http://localhost:${PORT} as ${
-          dev ? 'development' : process.env.NODE_ENV
-        }`
+        `> Server listening at http://localhost:${PORT} on ${dev} environment`
     );
 })
 
