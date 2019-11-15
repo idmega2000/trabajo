@@ -5,8 +5,10 @@
   "description": "An application to manage job applications",
   "main": "index.mjs",
   "scripts": {
-    "test": "npm run test",
+    "test": "nyc mocha --require @babel/register",
     "start": "babel-node index.js",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "dev": "nodemon"
   },
   "repository": {
@@ -35,8 +37,11 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "@babel/register": "^7.6.2",
     "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.7",
+    "mocha": "^6.2.2",
     "morgan": "^1.9.1",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "nyc": "^14.1.1"
   },
   "engines": {
     "node": "12.13.0"
